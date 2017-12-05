@@ -1,7 +1,6 @@
 package com.watson.nick.TWExercises;
 
 public class Main {
-
     public static void main(String[] args) {
         Triangle one = new Triangle();
         System.out.println(one.drawAsterisk());
@@ -13,5 +12,8 @@ public class Main {
         System.out.println(two.drawIsoscelesTriangle(3));
         System.out.println(two.drawDiamond(3));
         System.out.println(two.drawDiamondWithName(3, "Nick"));
+
+        FizzBuzz three = new FizzBuzz();
+        System.out.println(three.fizzBuzz());
     }
 }
