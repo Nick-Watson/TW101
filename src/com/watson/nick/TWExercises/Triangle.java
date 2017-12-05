@@ -5,11 +5,11 @@ public class Triangle {
         return "*";
     }
 
-    public String drawHorizontalLine(int n) {
+    public String drawHorizontalLine(int n, String value) {
         int length = 0;
         String line = "";
         while (length < n) {
-            line = line + drawAsterisk();
+            line = line + value;
             length++;
         }
 
@@ -33,10 +33,10 @@ public class Triangle {
         int height = 1;
         String triangle = "";
         while (height < n) {
-            triangle = triangle + drawHorizontalLine(height) + "\n";
+            triangle = triangle + drawHorizontalLine(height, drawAsterisk()) + "\n";
             height++;
         }
 
-        return triangle + drawHorizontalLine(n);
+        return triangle + drawHorizontalLine(n, drawAsterisk());
     }
 }

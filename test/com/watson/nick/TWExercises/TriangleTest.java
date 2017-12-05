@@ -19,7 +19,7 @@ public class TriangleTest {
 
     @Test
     public void drawHorizontalLine() throws Exception {
-        assertEquals("***", tester.drawHorizontalLine(3));
+        assertEquals("***", tester.drawHorizontalLine(3, "*"));
     }
 
     @Test
