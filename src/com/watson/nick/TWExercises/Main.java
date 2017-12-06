@@ -15,5 +15,8 @@ public class Main {
 
         FizzBuzz three = new FizzBuzz();
         System.out.println(three.fizzBuzz());
+
+        PrimeFactors four = new PrimeFactors();
+        System.out.println(four.generate(30));
     }
 }
